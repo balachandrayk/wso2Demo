@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/CommonSeqInvokeAPI" name="CommonSeqInvokeAPI" xmlns="http://ws.apache.org/ns/synapse">
+  <resource methods="POST" protocol="http">
+    <inSequence>
+      <property expression="$url:seqName" name="seqname" scope="default" type="STRING"/>
+      <log level="custom">
+        <property expression="$url:seqName" name="######### Sequence Name : "/>
+      </log>
+      <sequence key="{$ctx:seqname}"/>
+      <respond/>
+    </inSequence>
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+</api>

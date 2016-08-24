@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="CommonSeqInvokeAPI" groupId="com.motorola.wso2.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/CommonSeqInvokeAPI.xml</file>
+    </artifact>
+    <artifact name="testSeq" groupId="com.motorola.wso2.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/testSeq.xml</file>
+    </artifact>
+</artifacts>
